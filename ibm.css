@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.5;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+a {
+  color: #262626;
+  text-decoration: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 90%;
+  max-width: 1750px;
+  margin: 0px auto;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.left-menu {
+  flex: 1;
+}
+
+.logo {
+  width: 7rem;
+}
+
+@media (max-width: 991px) {
+  .logo-div {
+    margin-left: 40%;
+  }
+  .navbar-toggler {
+    margin-left: 80%;
+  }
+}
+
+.showcase {
+  width: 100%;
+  height: 500px;
+  background: url(images/backgone.jpg) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 100px;
+  background-size: contain;
+}
+.showcase a {
+  height: 38px;
+  width: 12rem;
+}
+.showcase div {
+  margin-left: 123px;
+}
+
+@media (max-width: 1084px) {
+  .showcase {
+    width: 100%;
+    height: 500px;
+    background: url(images/backgonecrop.jpg) no-repeat center center/cover;
+    background-size: contain;
+    margin-bottom: 223px;
+  }
+  .showcase h2 {
+    margin-top: 693px;
+    background-color: white;
+    width: 100%;
+  }
+}
+
+.home-cards {
+  /* display: grid;
+    grid-template-columns: repeat( 4, 1fr ); */
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  margin-bottom: 110px;
+}
+
+.home-cards img {
+  width: 100%;
+  height: 214px;
+  margin-bottom: 40px;
+}
+.car01 {
+  flex: 1;
+  min-width: 226px;
+  margin: 5px;
+}
+.home-cards .car01 a {
+  display: inline-block;
+  padding-top: 10px;
+  color: #0067b8;
+  font-weight: bold;
+}
+.home-cards .car01 a:hover {
+  border-bottom: #0067b8 2px solid;
+}
+.home-cards .car01 h6 {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 35px;
+}
+.home-cards .car01 a:hover i {
+  margin-left: 10px;
+}
+
+.xbox {
+  width: 100%;
+  height: 500px;
+  background: url("images/backgtwo.jpg") no-repeat center center/cover;
+  display: flex;
+  margin-bottom: 10px;
+  background-size: contain;
+}
+.content {
+  width: 35%;
+  height: 200px;
+  /* height: fit-content; */
+  background-color: white;
+  padding: 40px 30px 40px 30px;
+
+  margin-top: 8rem;
+  margin-left: 5em;
+}
+/* .content a.btn{
+  height: 36px;
+  margin-bottom: 20px;
+} */
+
+@media (max-width: 1125px) {
+  .content {
+    width: 100%;
+    margin-top: 500px;
+    margin-left: 0px;
+  }
+  .xbox {
+    margin-bottom: 200px;
+  }
+}
+
+.follow {
+  display: flex;
+  margin: -4em 0 4em;
+}
+.follow * {
+  margin-right: 11px;
+}
+
+/* links */
+
+.links {
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0;
+}
+
+.links-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.links li {
+  line-height: 2.8;
+}
+.links h3 {
+  font-size: 1rem;
+}
+
+/* footer */
+
+.footer {
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer div i {
+  margin-right: 10px;
+}
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footer li {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+/* @media (max-width:860px) {
+    body{
+      overflow-x: hidden;
+    }
+  } */
+
+/* 700px */
+
+@media (max-width: 1100px) {
+
+  .links .links-inner {
+    grid-template-columns: repeat(2, 220px);
+  }
+}
+
+/* 394px */
+
+@media (max-width: 395px) {
+  .content {
+    margin-top: 450px;
+  }
+}
+
+/* 500px */
+
+@media (max-width: 500px) {
+  .links .links-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .links .links-inner ul {
+    margin-bottom: 20px;
+  }
+}
